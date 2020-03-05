@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.opera20">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".FluteEnchantee"></activity>
+        <activity android:name=".Aida" />
+        <activity android:name=".NosPartenaires" />
+        <activity android:name=".Lassociation" />
+        <activity android:name=".OrchestreClaviers" />
+        <activity android:name=".OrchestrePercussions" />
+        <activity android:name=".OrchestreCordes" />
+        <activity android:name=".OrchestreCuivres" />
+        <activity android:name=".OrchestreVentBois" />
+        <activity
+            android:name=".Lorchestre"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lescoulisses"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lesprecedentesproductions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Lascene"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Latechnique"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Quiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Billetterie"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Carmen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActuOpera"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PageAccueil"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FaceFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.ar.codelab.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths" />
+        </provider>
+    </application>
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

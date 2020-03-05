@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lascene"
+    android:background="@drawable/fovdl_appli_scene">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="402dp"
+        android:layout_height="529dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="9dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backtohomepage" />
+
+    <TextView
+        android:id="@+id/textViewOpeningWordPress"
+        android:layout_width="386dp"
+        android:layout_height="367dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:text="la scène"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="80px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.297" />
+
+    <TextView
+        android:id="@+id/leschanteurssolistes"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:text="les chanteurs solistes"
+        android:textAllCaps="true"
+        android:textColor="@color/grey"
+        android:textSize="45px"
+        android:textStyle="bold"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
+
+    <TextView
+        android:id="@+id/lechœur"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:text="le chœur"
+        android:textAllCaps="true"
+        android:textColor="@color/grey"
+        android:textSize="45px"
+        android:textStyle="bold"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667" />
+
+    <TextView
+        android:id="@+id/lesdanseurs"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:text="les danseurs"
+        android:textAllCaps="true"
+        android:textColor="@color/grey"
+        android:textSize="45px"
+        android:textStyle="bold"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <TextView
+        android:id="@+id/lesfanfares"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:text="les fanfares"
+        android:textAllCaps="true"
+        android:textColor="@color/grey"
+        android:textSize="45px"
+        android:textStyle="bold"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789" />
+
+    <TextView
+        android:id="@+id/autres"
+        android:layout_width="230dp"
+        android:layout_height="42dp"
+        android:gravity="center_horizontal"
+        android:text="autres..."
+        android:textAllCaps="true"
+        android:textColor="@color/grey"
+        android:textSize="45px"
+        android:textStyle="bold"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <ImageView
+        android:id="@+id/backtohomepage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/fovdl_appli_boutonretour" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
